@@ -1,0 +1,184 @@
+/*------- fonts -------*/
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500;700&display=swap');
+
+body{
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.3em;
+    background: rgb(250, 246, 246);
+    margin: 0%;     
+}
+section{
+    margin-bottom: 5%;
+}
+
+/*-------- menu_bar-------- */
+.mb_navbar{
+    display: none;
+}
+
+.menu_title{
+    font-size: 24px;
+}
+.menu_container{
+    display: flex;
+    justify-content: space-between;
+    padding: 3% 8%;
+}
+.menu_items ul{
+    display: flex;
+    
+}
+.menu_item{
+    list-style: none;
+    padding: 15px;
+    
+}
+.menu_item a{
+    text-decoration: none;
+    color: black;
+}
+
+/* ---------blog-01------ */
+.blog-01{
+    display: flex;
+    padding: 3% 8%;
+}
+.blog-01-description{
+    width: 60%;
+   
+}
+#title-01{
+    font-size: 3em;
+    
+}
+.button{
+    text-decoration: none;
+    background-color:  crimson;
+    padding: 10px 40px;
+    border-radius: 20px;
+    color: ghostwhite;
+    font-weight: 400;
+}
+.blog-01-img{
+    background-image: url(images/Circle\ design.svg);
+    background-repeat: no-repeat;
+    margin-left: 15%;
+    width: 40%;
+}
+.blog-01 p{
+    padding-bottom: 20px;
+    margin-top: -30px; 
+}
+.fa-arrow-right{
+    padding-left: 5px;
+}
+
+/* ----company-logo---- */
+.company{
+    margin-left: 8%;
+    margin-right: 8%;
+}
+.company-logo{
+    display: flex;
+    justify-content: center;
+}
+.logos{
+    padding-left: 50px;
+}
+.logos>a>img{
+    width: 150px;
+    height: 100px;  
+}
+
+/* ------Popular Collection------ */
+.collection-title{
+text-align: center;
+padding-top: 25px;
+padding-bottom: 25px;
+}
+.collections{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 40px;
+    row-gap: 40px;
+    margin-left: 12%;
+    margin-right: 12%;
+}
+.collection{
+    box-shadow: 10px 10px 10px  lightgrey;
+    background-color: white;
+    border-radius: 20px;
+    padding: 20px 20px;
+}
+.collection img{
+    width: 100%;
+}
+.collection h3{
+    font-weight: 500;
+    font-size: 30px;
+}
+.collection p{
+    color: gray;
+}
+.see-more a{
+    text-decoration: none;
+    color: crimson ;
+}
+.see-more{ 
+    text-align: end;
+    padding-right: 12%;
+    padding-top: 30px;
+}
+
+/* -------blog-02------- */
+.blog-02{
+    display: flex;
+    padding: 3% 8%;
+}
+.blog-02-description{
+    width: 60%;   
+}
+.blog-02-img{
+      width: 40%;
+}
+#title-02{
+    font-size: 2em;
+}
+/* --------footers-------- */
+footer{
+    text-align: center;
+    color: white;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    background-color: rgb(26, 22, 22);
+}
+.icons i{
+  background-color: rgb(27, 27, 110);
+  border-radius: 30px;
+  width: 50px;
+  height: 40px;
+  padding-top: 15px;
+  margin-right: 20px;
+  font-size: 30px;
+}
+
+/* ------responsive-------- */
+
+@media screen and (max-width: 655px){
+    .menu_container{
+        display:none;
+    }
+    .mb_navbar{
+        display: grid;
+        grid-template-columns: 25% 50% 25%;
+    }
+    #mb-title01{
+     font-size: 1.3em;   
+    }
+    .fa-shopping-cart{
+        align-items: flex-end;
+        margin-left: 100px;
+    }
+
+}
